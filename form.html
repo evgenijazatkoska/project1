@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- CSS script -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest Font-Awesome CDN -->
+        <script src="https://kit.fontawesome.com/3257d9ad29.js" crossorigin="anonymous"></script>
+      </head>
+    <body>
+        <!-- NAVBAR -->
+
+   
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning py-lg-4 p-0 custom-shadow">
+    
+    <a class="navbar-brand ml-5 " href="index.html">
+        <img src="./img/brainster-logo.png" width="60" height="60" alt="logo">
+    </a>
+    <button class="navbar-toggler border-0 collapsed mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item ">
+          <a class="nav-link text-dark font-weight-bolder mx-5 hover-underline-animation" href="coming-soon.html">Академија за маркетинг</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark font-weight-bolder mx-5 hover-underline-animation" href="coming-soon.html">Академија за програмирање</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark font-weight-bolder mx-5 hover-underline-animation" href="coming-soon.html">Академија за data science</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark font-weight-bolder mx-5 hover-underline-animation" href="coming-soon.html">Академија за дизајн</a>
+          </li>
+          <a href="form.html">
+          <button type="button" class="btn btn-danger mx-5">Вработи наш студент</button>
+        </a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-warning">
+    <div class="row py-5">
+      <div class="col p-0 ">
+          <h2 class="h1 font-weight-bold text-center font-size-big py-5">Вработи студенти</h1>
+      </div>
+    </div>
+  
+  
+
+  <!-- FORM -->
+<div class="container custom-container container2">
+  
+
+      <form id="myForm">
+        <div class="form-row">
+          <div class="col-12 col-md-6">
+            <label for="name" class="font-weight-bold">Име и презиме</label>
+            <input type="text" class="form-control font-italic" placeholder="Вашето име и презиме">
+          <div class="error-message"></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="company" class="font-weight-bold">Име на компанија</label>
+            <input type="text" class="form-control font-italic" placeholder="Име на вашата компанија">
+            <div class="error-message"></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-12 col-md-6">
+            <label for="email" class="font-weight-bold">Контакт имејл</label>
+            <input type="email" class="form-control font-italic" placeholder="Контанкт имејл на вашата компанија">
+            <div class="error-message"></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="phone" class="font-weight-bold">Контакт телефон</label>
+            <input type="text" class="form-control font-italic" placeholder="Контакт имејлна вашата компанија">
+            <div class="error-message"></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-12 col-md-6">
+            <label for="FormControlSelect" class="font-weight-bold">Тип на студенти</label>
+            <select class="form-control" id="FormControlSelect">
+              <option value="" disabled selected class="font-weight-bold">Изберете тип на студент</option>
+              <option class="font-weight-bold">Студенти од маркетинг</option>
+              <option class="font-weight-bold">Студенти од програмирање</option>
+              <option class="font-weight-bold">Студенти од дизајн</option>
+              <option class="font-weight-bold">Студенти од data science</option>
+            </select>
+            <div class="error-message"></div>
+          </div>
+          <div class="col-12 col-md-6 ">
+            <button type="submit"  class="btn btn-danger btn-block btn-custom mb-md-0 mb-5" onclick="validateForm()">ИСПРАТИ</button>
+          </div>
+        </div>
+      </form>
+      
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="row bg-dark ">
+    <div class="col">
+      <p class="font-weight-bolder text-white text-center m-0 py-3">Изработено со &#x2764; од студентите на Brainster</p>
+    </div>
+  </div>
+</footer>
+</div>
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+      
+      </body>
+        
+</html>
